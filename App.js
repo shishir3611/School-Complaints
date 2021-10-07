@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import {createAppContainer} from 'react-navigation';
 import {createBottomTabNavigator} from 'react-navigation-tabs' 
 import WriteComplaint from './screens/WriteComplaint'
-import ReadComplaint from './screens/ReadComplaint'
+import ReadStoryScreen from './screens/ReadCompaint'
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 export default class App extends React.Component {
@@ -18,7 +18,7 @@ export default class App extends React.Component {
 
 const TabNavigator = createBottomTabNavigator({
   WriteComplaint: WriteComplaint,
-  ReadComplaint: ReadComplaint
+  ReadComplaint: ReadStoryScreen
 },
 {
   defaultNavigationOptions: ({navigation})=>({
